@@ -1,13 +1,13 @@
-export interface Post {
-  id: string
-  title: string
-  slug: string
-  content: string
-  excerpt: string
-  createdAt: string
+interface Post {
+  id: string;
+  title: string;
+  slug: string;
+  content: string;
+  excerpt: string;
+  createdAt: string;
 }
 
-export const posts: Post[] = [
+const posts: Post[] = [
   {
     id: "1",
     title: "Getting Started with React",
@@ -58,4 +58,6 @@ export const posts: Post[] = [
       "A full-stack tutorial covering Next.js, MongoDB, Mongoose, and CRUD operations.",
     createdAt: "2026-06-20T11:00:00Z",
   },
-]
+];
+
+export default posts;
